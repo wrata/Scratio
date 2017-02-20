@@ -10,7 +10,7 @@ class arduino():
         self.ser = serial.Serial()
         self.dp_out = [-1] * 3   #d10,d11,d13
         self.dp_in = [-1] * 3    #d2,d3,d4
-        self.ap = [-1] * 7   #A0,A1,A2,A3,A4,A5,A6
+        self.ap = [-1] * 8   #A0,A1,A2,A3,A4,A5,A6, A7
         self.cap_in = [-1]*12  #caps sensor
         self.oflg = 0
 
@@ -31,7 +31,7 @@ class arduino():
 
     def main(self):
         #print u"Arduino started"
-        self.stop_event = threading.Event() #スレッドを停止させるフラグ
+        self.stop_event = threading.Event() #?
         self.thread = threading.Thread(target=self.readStatus)
         self.thread.setDaemon(True)
         self.thread.start()
@@ -85,8 +85,8 @@ class arduino():
 
 if __name__ == "__main__":
     ser = arduino()
-#    ser.open("COM26",115200)
-    ser.open("/dev/cu.usbmodem411",115200)
+    ser.open("COM22",115200)
+#    ser.open("/dev/cu.usbmodem411",115200)
 #    ser.open("/dev/cu.usbserial-A901OFEZ",115200)
     ser.main()
 
