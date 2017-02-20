@@ -14,7 +14,7 @@
     "menus": {
       "outDPins": ["D10","D11","D13"],
       "outAPins": ["D5","D6"],
-      "ServoPins": ["D7","D8","D12"],
+      "servoPins": ["D7","D8","D12"],
       "inAPins": ["A0", "A1", "A2", "A3", "A4" ,"A5", "A6", "A7"],
       "inDPins": ["D2", "D3", "D4"]
     },
