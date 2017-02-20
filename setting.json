@@ -14,12 +14,12 @@
     "site":"http://okhiroyuki.github.io/S2A/index.html",
     "refresh":"Port refresh"
   },
-  "ja":{
-    "extension":"使用する拡張機能",
-    "connecting":"接続中",
-    "connect":"接続",
-    "serial":"シリアルポート",
+  "pl":{
+    "extension":"Wybierz rozszerzenie",
+    "connecting":u"Połączono"",
+    "connect":u"Połącz",
+    "serial":"Port szeregowy",
     "site":"http://okhiroyuki.github.io/S2A/ja/index.html",
-    "refresh":"ポートの更新"
+    "refresh":u"Lista portów"
   }
 }
