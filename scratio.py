@@ -1,4 +1,4 @@
-# coding=utf-8
+n# coding=utf-8
 
 from server import *
 import serial.tools.list_ports
@@ -13,7 +13,7 @@ class scratio:
         self.oflg = 0
         self.sflg = 0
         self.selectflg = [0,0]
-        self.lang = 'ja'
+        self.lang = 'en'
         self.getportlist()
         self.openjson()
         self.icon = self.find_data_file('images/icon_256x256.ico')
@@ -98,7 +98,7 @@ class scratio:
         self.menu_bar = wx.MenuBar()
 
         self.menu_bar.Append(menu_lang,u"View")
-        menu_lang.AppendRadioItem(1,u"日本語")
+        menu_lang.AppendRadioItem(1,u"Polish")
         menu_lang.AppendRadioItem(2,u"English")
 
         self.menu_bar.Append(self.menu_about,u"Help")
@@ -142,7 +142,7 @@ class scratio:
 
     def main(self):
         app = wx.App()
-        self.frame = wx.Frame(None, wx.ID_ANY, u'Scratio',size=(300,290))
+        self.frame = wx.Frame(None, wx.ID_ANY, u'Scratio PL',size=(300,290))
         #self.frame = wx.Frame(None, wx.ID_ANY, u'Scratio')
 
         application = wx.App()
