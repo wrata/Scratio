@@ -16,10 +16,10 @@
   },
   "pl":{
     "extension":"Wybierz rozszerzenie",
-    "connecting":u"Połączono"",
-    "connect":u"Połącz",
+    "connecting":"Połączono"",
+    "connect":"Połącz",
     "serial":"Port szeregowy",
     "site":"http://okhiroyuki.github.io/S2A/ja/index.html",
-    "refresh":u"Lista portów"
+    "refresh":"Lista portów"
   }
 }
