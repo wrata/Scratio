@@ -88,6 +88,7 @@ class server():
                         msg += 'analogRead/A' + str(num) + ' ' + str(ap[num]) + chr(10)
                         msg += 'sound ' + str(ap[num]) + chr(10)
                     elif num == 6:
+                        msg += 'analogRead/A' + str(num) + ' ' + str(ap[num]) + chr(10)
                         msg += 'slider ' + str(ap[num]) + chr(10)
                     else:
                         msg += 'analogRead/A' + str(num) + ' ' + str(ap[num]) + chr(10)
