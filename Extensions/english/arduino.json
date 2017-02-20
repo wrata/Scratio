@@ -6,7 +6,7 @@
         [" ", "digital %m.outDPins off", "digitalWriteOff", "D13", "false"],
         [" ", "analog %m.outAPins value %n", "analogWrite", "D5", "100"],
         [" ", "tone D9 value %n","tone","220"],
-        ["b", "sensor %m.inDPins pressed?", "digitalRead", "A2"],
+        ["b", "sensor %m.inDPins pressed?", "digitalRead", "D2"],
         ["r", "value of sensor %m.inAPins", "analogRead", "A0"],
         [" ", "motor %m.servoPins angle %n", "servoangle","D7","180"],
         [" ", "motor %m.servoPins off","servodetach","D7"]
