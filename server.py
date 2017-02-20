@@ -148,8 +148,7 @@ class server():
 
     def main(self):
         #print "Server started"
-        self.stop_event = threading.Event() #スレッドを停止させるフラグ
-        #スレッドの作成と開始
+        self.stop_event = threading.Event() #?
         self.thread = threading.Thread(target=self.readSocket)
         self.thread.setDaemon(True)
         self.thread.start()
@@ -181,8 +180,8 @@ class server():
 if __name__ == "__main__":
     server = server(8099)
     server.main()
-#    server.call_arduino("COM26")
-    server.call_arduino("/dev/cu.usbmodem411")
+    server.call_arduino("COM22")
+#    server.call_arduino("/dev/cu.usbmodem411")
 #    server.call_arduino("/dev/cu.usbserial-A901OFEZ")
 
     while True:
